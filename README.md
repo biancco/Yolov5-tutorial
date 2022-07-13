@@ -16,3 +16,5 @@ Trained image size: 640 * 640, Inference image size: 640 * 640
 yolov5s (small) model is default / n,s,m,l,x model exists
 
 Small or Medium is recommended
+
+test=1
