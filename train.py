@@ -408,6 +408,8 @@ def train(hyp, opt, device, callbacks):  # hyp is path/to/hyp.yaml or hyp dictio
             log_vals = list(mloss) + list(results) + lr
             callbacks.run('on_fit_epoch_end', log_vals, epoch, best_fitness, fi)
 
+            print("Current epoch : %d"%(epoch))
+
             # Save model
             if (not nosave) or (final_epoch and not evolve):  # if save
                 ckpt = {
